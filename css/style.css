@@ -1,0 +1,490 @@
+/* Google Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/******** Utilitys ********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--body-color);
+}
+
+:root {
+  --white: #ffffff;
+  --off-white: #c7c7c7;
+  --body-color: #111111;
+  --dark-gray: #1e1e1e;
+  --mid-gray: #181818;
+  --active-red: #c91b28;
+  --mid-red: #ff3343;
+  --dull-red: #ef4040;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* common btn design*/
+.btn-style {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--active-red);
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.5rem 3.2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style:hover {
+  background-color: var(--mid-red);
+  transform: translateY(-0.2rem);
+}
+
+/* common know more */
+/* know more text */
+.know-more {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--mid-red);
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.know-more:hover {
+  color: var(--active-red);
+}
+
+/* right side arrow */
+.arrow-icon {
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in;
+}
+
+.know-more:hover .arrow-icon {
+  transform: translateX(0.5rem);
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+/**************************/
+/********* navbar *********/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+
+/* logo */
+.logo {
+  width: 12rem;
+}
+
+/* nav-menu */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav-link */
+.nav-link {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 6.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--mid-red);
+}
+
+/* arrow down icon */
+.arrow-down-icon {
+  margin-left: 0.6rem;
+  vertical-align: super;
+}
+
+/**************************/
+/********* ShowCase *********/
+.showcase {
+  /* background-color: slateblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+/** left-img **/
+.left-img {
+  width: 40%;
+}
+
+.left-img img {
+  width: 100%;
+}
+
+/** right-content **/
+.right-content {
+  width: 55%;
+}
+
+/* designer name in red */
+.right-content .red-text-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--mid-red);
+}
+
+/* role */
+.right-content h1 {
+  font-size: 7rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+/* description about person */
+.right-content .white-text {
+  font-size: 1.6rem;
+  color: var(--white);
+  width: 80%;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/******************************/
+/********* Section 1 *********/
+.sec1 {
+  width: 100%;
+  padding: 8rem 15rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sec1:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--mid-gray);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/***************/
+/*** service ***/
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+/* common for all box */
+.common-service {
+  width: 35%;
+  color: var(--white);
+  background-color: var(--dark-gray);
+  padding: 6rem 5rem;
+  flex-wrap: wrap;
+  align-self: normal;
+}
+
+/* common img */
+.common-service img {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* common h4 */
+.common-service .h4 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+/* common para */
+.common-service .service-text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+
+/* Active BOX */
+/* Mid red box */
+.product {
+  background-color: var(--active-red);
+}
+
+.product.common-service .know-more {
+  color: var(--white);
+}
+
+/*********************/
+/*** Work Details ***/
+.work-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* common work */
+.common-work {
+  width: 35%;
+}
+
+/** big experience **/
+.big-experience {
+  text-align: center;
+}
+
+.big-experience h2 {
+  color: var(--dull-red);
+  font-size: 12rem;
+  font-weight: 800;
+}
+
+.big-experience.common-work p {
+  font-size: 2.8rem;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+/** client and project box **/
+.client-project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* client top */
+.client-top {
+  background-color: var(--dark-gray);
+  padding: 5rem;
+}
+
+/* project complete bottom */
+.project-complet-bottom {
+  background-color: var(--dark-gray);
+  padding: 5rem;
+}
+
+/** experience and achievment **/
+.experience-achievment {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* experience-top */
+.experience-top {
+  background-color: var(--dark-gray);
+  padding: 5rem;
+}
+
+/* achivement bottom */
+.achivement-bottom {
+  background-color: var(--dark-gray);
+  padding: 5rem;
+}
+
+/* common styling for 4 box */
+.common-work h5 {
+  font-size: 4rem;
+  color: var(--dull-red);
+  font-weight: 800;
+}
+
+.common-work p {
+  font-size: 2rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+/*************************************/
+/********* Section 2 Feature *********/
+.feature {
+  padding: 6rem 15rem 2rem;
+}
+
+/*** feature head ***/
+.feature-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+/* left text */
+.left-text h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.left-text p {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+/* right btn */
+.feature-btn {
+  background-color: var(--mid-red);
+}
+
+.feature-btn:hover {
+  background-color: var(--active-red);
+}
+
+/*** feature container ***/
+.feature-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* common project size*/
+.common-project {
+  width: 46%;
+  align-self: normal;
+  margin-bottom: 4rem;
+}
+
+/** image wrapper (bg) **/
+.img-wrapper {
+  background-color: var(--dark-gray);
+  padding: 7rem 0;
+  margin-bottom: 2rem;
+}
+
+/* image container */
+.project-img {
+  width: 90%;
+  margin: auto;
+}
+
+/* img */
+.project-img img {
+  width: 100%;
+  height: 30rem;
+}
+
+/** project title **/
+.project-title h5 {
+  color: var(--white);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/*************************************/
+/********* Section 3 Contact *********/
+.contact {
+  padding: 6rem 15rem;
+}
+
+.contact-wrapper {
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8rem;
+}
+
+/* text */
+.text {
+  width: 80%;
+}
+
+.text h2 {
+  font-size: 5rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.text p {
+  font-size: 1.6rem;
+  color: var(--off-white);
+}
+
+/* button */
+.contact-button {
+  width: 20%;
+  margin-left: auto;
+}
+
+/****************************************/
+/********* Section 4 Bottom Nav *********/
+.bottom-nav {
+  padding: 3rem 6rem;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+  margin: 0 2rem;
+  transition: all 0.3s ease;
+}
+
+.bottom-link:hover {
+  color: var(--active-red);
+}
+
+/**************************/
+/********* Footer *********/
+.foot {
+  padding: 3rem 15rem;
+  background-color: var(--dark-gray);
+}
+
+.foot-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.foot-logo {
+  width: 10rem;
+}
+
+.social {
+  width: 82%;
+  text-align: center;
+}
+
+.social img {
+  align-items: center;
+  margin: 0 3rem;
+}
