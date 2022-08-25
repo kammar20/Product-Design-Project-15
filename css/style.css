@@ -34,7 +34,7 @@ li {
   list-style-type: none;
 }
 
-/* common btn design*/
+/* !common btn design*/
 .btn-style {
   display: inline-block;
   color: var(--white);
@@ -97,6 +97,16 @@ li {
   width: 12rem;
 }
 
+/* hamburger */
+.hamburger {
+  display: none;
+}
+
+.hamburger .menu-icon {
+  font-size: 2rem;
+  color: var(--active-red);
+}
+
 /* nav-menu */
 .nav-menu {
   display: flex;
@@ -126,7 +136,6 @@ li {
 /**************************/
 /********* ShowCase *********/
 .showcase {
-  /* background-color: slateblue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +215,7 @@ li {
   color: var(--white);
   background-color: var(--dark-gray);
   padding: 6rem 5rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-self: normal;
 }
 
@@ -487,4 +496,456 @@ li {
 .social img {
   align-items: center;
   margin: 0 3rem;
+}
+
+/*****Common media query for 0 to 767px *****/
+
+@media only screen and (max-width: 767px) {
+  /*! common style   */
+
+  /* btn style */
+  .btn-style {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.2rem 2.8rem;
+  }
+
+  /* know more text */
+  .know-more {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  /* right side arrow */
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
+
+  /*! common style End  */
+
+  /**! navbar **/
+  .navbar {
+    padding: 2rem 2%;
+  }
+
+  /* logo */
+  .logo {
+    width: 8rem;
+  }
+
+  /* hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .menu-icon {
+    color: var(--active-red);
+  }
+
+  /* navmenu */
+  .nav-menu {
+    display: none;
+  }
+
+  /**! showcase **/
+  .showcase {
+    padding: 2rem 2%;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  /* left img */
+  .left-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* right content */
+  .right-content {
+    width: 100%;
+  }
+
+  /* designer name red */
+  .right-content .red-text-name {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  /* role */
+  .right-content h1 {
+    font-size: 4.5rem;
+  }
+
+  /* description about person */
+  .right-content .white-text {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  /**! Section 1 **/
+  .sec1 {
+    padding: 2rem 2%;
+    margin-bottom: 4rem;
+  }
+
+  /* service */
+  .service {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  /* common for all box */
+  .common-service {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  /* common img */
+  .common-service img {
+    width: 3.2rem;
+  }
+
+  /* common h4 */
+  .common-service .h4 {
+    font-size: 2.4rem;
+  }
+
+  /* common para */
+  .common-service .service-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  /** work details **/
+  .work-details {
+    flex-direction: column;
+  }
+
+  /* common work */
+  .common-work {
+    width: 100%;
+  }
+
+  /* big experience */
+  .big-experience h2 {
+    font-size: 9rem;
+    font-weight: 800;
+  }
+
+  .big-experience.common-work p {
+    font-size: 2.2rem;
+  }
+
+  /* ! Common padding for all 4 boxes */
+  .client-top,
+  .project-complet-bottom,
+  .experience-top,
+  .achivement-bottom {
+    padding: 4rem 3rem;
+  }
+
+  /* common h5 for all 4 boxes */
+  .common-work h5 {
+    font-size: 3rem;
+  }
+
+  .common-work p {
+    font-size: 1.6rem;
+  }
+
+  /**! section 2 Feature **/
+  .feature {
+    padding: 2rem 2%;
+  }
+
+  /* feature head */
+  .feature-head {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* left text*/
+  .left-text p {
+    margin-bottom: 2rem;
+  }
+
+  /* feature container */
+  .feature-wrapper {
+    flex-direction: column;
+  }
+
+  /* common project size */
+  .common-project {
+    width: 100%;
+  }
+
+  /* img wrapper (bg) */
+  .img-wrapper {
+    padding: 5rem 0;
+  }
+
+  /** project title **/
+  .project-title h5 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  /** section 3 **/
+  .contact {
+    padding: 2rem 2%;
+  }
+
+  /* contact wrapper */
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  /* text */
+  .text {
+    width: 100%;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  /* button  */
+  .contact-button {
+    width: 100%;
+  }
+
+  /** bottom nav **/
+  .bottom-nav {
+    padding: 2rem 2%;
+  }
+
+  .bottom-link {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+  }
+
+  /** footer **/
+  .foot {
+    padding: 2rem 2%;
+  }
+
+  /* foot wrapper */
+  .foot-wrapper {
+    flex-direction: column;
+  }
+
+  .foot-logo {
+    width: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .social {
+    width: 100%;
+  }
+}
+
+/*****Common media query for 768px to 1200px *****/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /* !common btn design*/
+  .btn-style {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1.2rem 2.8rem;
+  }
+
+  /* common know more */
+  /* know more text */
+  .know-more {
+    font-size: 1.3rem;
+  }
+
+  /* right side arrow */
+  .arrow-icon {
+    font-size: 1.3rem;
+  }
+  /* !common btn design End*/
+
+  /** navbar **/
+  .navbar {
+    padding: 2rem 2%;
+  }
+
+  /* logo */
+  .logo {
+    width: 10rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+  }
+
+  /** Showcase **/
+  .showcase {
+    padding: 2rem 2%;
+    margin-bottom: 4rem;
+  }
+
+  /* left img */
+  .left-img {
+    width: 50%;
+  }
+
+  /* right content */
+  .right-content {
+    width: 50%;
+  }
+
+  /* name in red */
+  .right-content .red-text-name {
+    font-size: 1.6rem;
+  }
+
+  /* role */
+  .right-content h1 {
+    font-size: 4.5rem;
+  }
+
+  /* description */
+  .right-content .white-text {
+    font-size: 1.3rem;
+    width: 100%;
+    line-height: 2rem;
+  }
+
+  /**! Section 1 **/
+  .sec1 {
+    padding: 2rem 2%;
+    margin-bottom: 6rem;
+  }
+
+  /** service **/
+  .service {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .common-service {
+    width: 48%;
+    padding: 4rem 2rem;
+  }
+
+  /* common img */
+  .common-service img {
+    width: 3.5rem;
+  }
+
+  /* common h4 */
+  .common-service .h4 {
+    font-size: 2.5rem;
+  }
+
+  /* common para */
+  .common-service .service-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+  }
+
+  /* Active BOX */
+  /* Mid red box */
+  .product {
+    order: 2;
+  }
+
+  /** Work Details **/
+
+  /** big experience **/
+
+  .big-experience h2 {
+    font-size: 9rem;
+  }
+
+  .big-experience.common-work p {
+    font-size: 2rem;
+  }
+
+  /**! all 4 boxes same padding  **/
+  .client-top,
+  .project-complet-bottom,
+  .experience-top,
+  .achivement-bottom {
+    padding: 4rem 1rem;
+    align-self: normal;
+  }
+
+  /** common styling for 4 box **/
+  .common-work h5 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .common-work p {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  /**! Section 2 **/
+  .feature {
+    padding: 2rem 2%;
+  }
+
+  /*** feature head ***/
+  .feature-head {
+    margin-bottom: 6rem;
+  }
+
+  /*** feature container ***/
+  .feature-wrapper {
+    justify-content: center;
+  }
+
+  /* common project size*/
+  .common-project {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+
+  /** image wrapper (bg) **/
+  .img-wrapper {
+    padding: 5rem 0;
+  }
+
+  .project-img {
+    width: 95%;
+  }
+
+  /** project title **/
+  .project-title h5 {
+    font-size: 2.2rem;
+  }
+
+  /** contact **/
+  .contact {
+    padding: 2rem 2%;
+  }
+
+  .contact-wrapper {
+    padding: 6rem 2rem;
+  }
+
+  /* text */
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+    width: 80%;
+    line-height: 2.5rem;
+  }
 }
