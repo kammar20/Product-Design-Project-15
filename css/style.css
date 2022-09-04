@@ -95,6 +95,7 @@ li {
 /* logo */
 .logo {
   width: 12rem;
+  cursor: pointer;
 }
 
 /* hamburger */
@@ -486,6 +487,7 @@ li {
 
 .foot-logo {
   width: 10rem;
+  cursor: pointer;
 }
 
 .social {
@@ -496,6 +498,12 @@ li {
 .social img {
   align-items: center;
   margin: 0 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social img:hover {
+  transform: translateY(-0.2rem);
 }
 
 /*****Common media query for 0 to 767px *****/
